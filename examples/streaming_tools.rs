@@ -1,6 +1,6 @@
 // examples/basic_usage.rs
 
-use async_anthropic::{
+use async_llm::{
     Client,
     types::{CreateMessagesRequestBuilder, MessageBuilder, MessageRole},
 };

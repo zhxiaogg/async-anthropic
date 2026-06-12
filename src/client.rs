@@ -22,9 +22,9 @@ const BASE_URL: &str = "https://api.anthropic.com";
 /// # Example
 ///
 /// ```no_run
-/// # use async_anthropic::types::*;
+/// # use async_llm::types::*;
 /// # async fn run() {
-/// let client = async_anthropic::Client::default();
+/// let client = async_llm::Client::default();
 ///
 /// let request = CreateMessagesRequestBuilder::default()
 ///    .model("claude-3.5-sonnet")

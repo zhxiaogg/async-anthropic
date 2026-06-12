@@ -1,4 +1,4 @@
-use async_anthropic::{
+use async_llm::{
     Client,
     errors::AnthropicError,
     types::{GetModelResponse, ListModelsResponse},
