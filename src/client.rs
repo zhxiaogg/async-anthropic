@@ -3,12 +3,12 @@ use derive_builder::Builder;
 use reqwest::StatusCode;
 use reqwest_eventsource::{Event, EventSource, RequestBuilderExt as _};
 use secrecy::ExposeSecret;
-use serde::{Serialize, de::DeserializeOwned};
+use serde::{de::DeserializeOwned, Serialize};
 use std::{pin::Pin, time::Duration};
 use tokio_stream::{Stream, StreamExt as _};
 
 use crate::{
-    errors::{AnthropicError, StreamError, map_deserialization_error},
+    errors::{map_deserialization_error, AnthropicError, StreamError},
     messages::Messages,
     models::Models,
 };
